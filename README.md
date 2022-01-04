@@ -7,7 +7,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Paranoidal97/Virtual-Breathalyzer
+   git clone https://github.com/Paranoidal97/Express-Typescript-Crud
    ```
 2. Install NPM packages
    ```sh
