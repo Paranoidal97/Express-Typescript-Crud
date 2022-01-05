@@ -26,12 +26,12 @@ const updateProduct = async (product: IProduct) => {
 }
 
 const listProducts = async () => {
-    const returning = await dbQuery(`SELECT * FROM products`);
+    const returning = await dbQuery(`SELECT id,name FROM products`);
     return returning as Product[];
 }
 
 const getProduct = async (id: number) => {
-    const returning = await dbQueryFirst(`SELECT * FROM products WHERE id = ?`, [id]);
+    const returning = await dbQueryFirst(`SELECT id,name,price FROM products WHERE id = ?`, [id]);
     return returning as Product | undefined;
 }
 
